@@ -16,10 +16,10 @@ double mile_to_kilometer(double mile){
 }
 
 int main(){
-	double mile;
+    double mile;
 	std::cout << "Bitte geben Sie die umzurechnende Meilenzahl ein: ";
 	std::cin >> mile;
-    std::cout << "wird berechnet..." << std::endl;
+	std::cout << "wird berechnet..." << std::endl;
 	std::cout << mile << " Meilen sind umgerechnet " << mile_to_kilometer(mile) << " Kilometer." << std::endl;
 
 	return 0;
