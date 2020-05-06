@@ -1,8 +1,7 @@
 /* 
  * Lisa P.
- * Aufgabe 1.3
- * Berechnung der kleinsten Zahl,
- * die durch die Zahlen 1 bis 20 teilbar ist
+ * Programmierung Aufgabe 1.3
+ * Berechnung der kleinsten Zahl, die durch die Zahlen 1 bis 20 teilbar ist
  */
 
 #include <iostream>
