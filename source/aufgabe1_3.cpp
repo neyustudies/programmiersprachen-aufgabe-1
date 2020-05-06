@@ -24,7 +24,8 @@ long kgV(long n) {
    
 int main() {
     long n = 20;
-    std::cout << kgV(n) << std::endl;
+    std::cout << "Das kleinste gemeinsame Vielfache der Zahlen 1-20 wird berechnet..." << std::endl;
+    std::cout << "Ergebnis: " << kgV(n) << std::endl;
     
     return 0;
 }
