@@ -21,3 +21,9 @@ TEST_CASE("describe_fract", "[fract]") {
   REQUIRE(fract(3.307) == Approx(0.307));
   REQUIRE(fract(-4.0) == Approx(0));
   REQUIRE(fract(-33.4303857548767) == Approx(-0.4303857548767));
+
+}
+
+int main(int argc, char* argv[]) {
+  return Catch::Session().run(argc, argv);
+}
