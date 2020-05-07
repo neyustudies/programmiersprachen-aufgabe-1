@@ -7,7 +7,7 @@
 
 #define CATCH_CONFIG_RUNNER
 #include <iostream>
-#include "catch.hpp"
+#include <catch.hpp>
 
 
 double mile_to_kilometer(double mile){
