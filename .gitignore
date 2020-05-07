@@ -87,3 +87,6 @@ public/fonts/
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+*.plist
+source/aufgabe1_3.dSYM/Contents/Resources/DWARF/aufgabe1_3
+source/aufgabe1_3
