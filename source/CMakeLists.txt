@@ -8,3 +8,7 @@ add_executable(mile_to_kilometer mile_to_kilometer.cpp)
 
 
 add_executable(aufgabe1_3 aufgabe1_3.cpp)
+
+add_executable(fract fract.cpp)
+
+add_executable(sum_multiples sum_multiples.cpp)
