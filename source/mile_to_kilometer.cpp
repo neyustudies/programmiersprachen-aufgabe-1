@@ -26,6 +26,8 @@ TEST_CASE("describe_mile_to_kilometer", "[mile_to_kilometer]"){
 	REQUIRE(mile_to_kilometer(22) == Approx(35.4056));
 	REQUIRE(mile_to_kilometer(1) == Approx(1.60934));
 	REQUIRE(mile_to_kilometer(-21) == -1);
+	REQUIRE(mile_to_kilometer(-1) == -1);
+	REQUIRE(mile_to_kilometer(0) == 0);
 
 }
 
