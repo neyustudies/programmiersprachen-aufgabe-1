@@ -12,3 +12,5 @@ add_executable(aufgabe1_3 aufgabe1_3.cpp)
 add_executable(fract fract.cpp)
 
 add_executable(sum_multiples sum_multiples.cpp)
+
+add_executable(checksum checksum.cpp)
