@@ -1,7 +1,8 @@
 /* 
  * Lisa P.
  * Programmierung Aufgabe 1.15
- * Entwicklung mit TDD: Funktion, welche Meilen in Kilometer umrechnet
+ * Entwicklung mit TDD
+ * Funktion, welche Meilen in Kilometer umrechnet
  */
  
 
@@ -10,17 +11,33 @@
 #include <catch.hpp>
 
 
-double mile_to_kilometer(double mile){
-	double km = mile*1.609344;
+double mile_to_kilometer(double mile) {
+	if (mile < 0){
+		return -1;
+	} 
+	double km = mile*1.609344;	
 	return km;	
 }
 
-int main(){
-    double mile;
+
+TEST_CASE("describe_mile_to_kilometer", "[mile_to_kilometer]"){
+	REQUIRE(mile_to_kilometer(999) == Approx(1607.73));
+	REQUIRE(mile_to_kilometer(133) == Approx(214.043));
+	REQUIRE(mile_to_kilometer(22) == Approx(35.4056));
+	REQUIRE(mile_to_kilometer(1) == Approx(1.60934));
+	REQUIRE(mile_to_kilometer(-21) == -1);
+
+}
+
+int main(int argc, char* argv[]) {
+	
+	double mile;
 	std::cout << "Bitte geben Sie die umzurechnende Meilenzahl ein: ";
 	std::cin >> mile;
 	std::cout << "wird berechnet..." << std::endl;
-	std::cout << mile << " Meilen sind umgerechnet " << mile_to_kilometer(mile) << " Kilometer." << std::endl;
+	std::cout << mile << " Meilen sind umgerechnet " << mile_to_kilometer(mile) << " Kilometer" << std::endl;
 
-	return 0;
+	return Catch::Session().run(argc, argv);
+
+    
 }
