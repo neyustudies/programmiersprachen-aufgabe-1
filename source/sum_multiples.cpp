@@ -1,9 +1,9 @@
 /* 
  * Lisa P.
  * Programmierung Aufgabe 1.10
- * Entwicklung mit TDD
  * Funktion, welche Zahlen 1 bis 1000 aufaddiert, 
  * die durch 3 oder 5 teilbar sind
+ * Entwicklung mit TDD
  */
  
 
@@ -19,6 +19,7 @@ int sum_multiples(int k) {
         sum = sum + i;
     }
     if (k<1 || k>1000) {
+        std::cout << "Fehler! Erlaubt sind positive Ganzzahlen bis 1000." << std::endl;
         return -1;
     }
     return sum;
@@ -30,7 +31,7 @@ int sum_multiples() {
 
 
 TEST_CASE("describe_sum_multipes", "[sum_multiples]"){
-	REQUIRE(sum_multiples(999) == 233168);
+    REQUIRE(sum_multiples(999) == 233168);
     REQUIRE(sum_multiples(1000) == 234168);
     REQUIRE(sum_multiples(1001) == -1);
     REQUIRE(sum_multiples(1) == 0);
