@@ -220,11 +220,11 @@ Der Quellcode, auch ```source code``` genannt, ist eine in einer höheren Progra
 
 
 ### std::cin
-```std::cin``` ist das in ```iostream``` definierte Standardeingabestrom-Objekt und wird in der Standardeingabe (stdin) ausgegeben. ```cin ``` steht für console input.
+```std::cin``` ist das in ```iostream``` definierte Standardeingabe-Streamobjekt und wird in der Standardeingabe (stdin) eingegeben. ```cin ``` steht für 'console input'.
 
 
 ### std::cout
-```std::cout``` ist das in ```iostream``` definierte Standardausgabestrom-Objekt und wird in der Standardausgabe (stdout) ausgegeben. ```cout``` steht für console output.
+```std::cout``` ist das in ```iostream``` definierte Standardausgabe-Streamobjekt und wird in der Standardausgabe (stdout) ausgegeben. ```cout``` steht für 'console output'.
 
 
 ### Typ
@@ -234,7 +234,7 @@ Der (Daten-)Typ bezeichnet die Zusammenfassung konkreter Wertebereiche und darau
 
 
 ### Typkonvertierung
-Als Typkonvertierung bezeichnet man die Umwandlung eines Datentyps in einen anderen
+Als Typkonvertierung bezeichnet man die Umwandlung eines Datentyps in einen anderen.
 
 
 ### Variable
