@@ -14,3 +14,9 @@ add_executable(fract fract.cpp)
 add_executable(sum_multiples sum_multiples.cpp)
 
 add_executable(checksum checksum.cpp)
+
+add_executable(cyl cyl.cpp)
+
+add_executable(factorial factorial.cpp)
+
+add_executable(is_prime is_prime.cpp)
