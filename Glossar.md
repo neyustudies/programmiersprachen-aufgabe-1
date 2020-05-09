@@ -12,7 +12,7 @@ Glossar [A-Z]
 * [Gültigkeitsbereich](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#gültigkeitsbereich)
 * [Header](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#header)
 * [Initialisierung](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#initialisierung)
-* [#iostream](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#iostream)
+* [iostream](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#iostream)
 * [#include](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#include)
 * [Kapselung](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#kapselung)
 * [Kommentar](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#kommentar)
@@ -25,6 +25,9 @@ Glossar [A-Z]
 * [Präprozessordirektiven](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#präprozessordirektiven)
 * [Programm](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#programm)
 * [Quellcode](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#quellcode)
+* [std::]()
+* [std::cin]()
+* [std::cout]()
 * [Typ](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#typ)
 * [Typkonvertierung](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#typkonvertierung)
 * [Variable](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#variable)
@@ -197,6 +200,18 @@ Ein Programm ist eine Folge von Anweisungen und Definitionen in Maschinensprache
 
 ### Quellcode
 Der Quellcode, auch ```source code``` genannt, ist eine in einer höheren Programmiersprache geschriebene Abfolge von Programmanweisungen, die vom Menschen gelesen, aber erst nach einer elektronischen Übersetzung vom Computer verarbeitet werden können.
+
+
+### std::
+```std``` ist ein ```namespace``` und ```::``` ist der Operator für die Bereichsauflösung, der das Nachschlagen von Objekten nach Namen innerhalb eines ```namespace``` ermöglicht.
+
+
+### std::cin
+```std::cin``` ist das in ```iostream``` definierte Standardeingabestrom-Objekt und wird in der Standardeingabe (stdin) ausgegeben. ```cin ``` steht für console input.
+
+
+### std::cout
+```std::cout``` ist das in ```iostream``` definierte Standardausgabestrom-Objekt und wird in der Standardausgabe (stdout) ausgegeben. ```cout``` steht für console output.
 
 
 ### Typ
