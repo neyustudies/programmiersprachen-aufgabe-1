@@ -25,9 +25,9 @@ Glossar [A-Z]
 * [Präprozessordirektiven](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#präprozessordirektiven)
 * [Programm](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#programm)
 * [Quellcode](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#quellcode)
-* [std::]()
-* [std::cin]()
-* [std::cout]()
+* [std::](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#std)
+* [std::cin](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#stdcin)
+* [std::cout](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#stdcout)
 * [Typ](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#typ)
 * [Typkonvertierung](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#typkonvertierung)
 * [Variable](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#variable)
@@ -81,9 +81,20 @@ Ein Compiler ist ein Programm, das den in einer höheren Programmiersprache gesc
 ### Definition
 Die Festlegung des Verhaltens einer Funktion wird als Definition bezeichnet. Der Funktionsrumpf legt fest, was beim Aufruf der Funktion erfolgt. Eine Definition stellt dem Compiler alle Informationen zur Verfügung, die er benötigt, um Computercode zu generieren 
 
+- Datentyp: Legt den Aufbau des Typs fest
+- Funktion: Legt den Rumpf / die Implementierung der Funktion fest
+- Variable: Legt den Speicherort für das Objekt fest
+
 
 ### Deklaration
-Die Festlegung der Signatur einer Funktion in Kombination mit dem Funktionsnamen wird als Deklaration bezeichnet. Deklaration und Definition einer Funktion können getrennt erfolgen, z.B.
+Die Festlegung der Signatur einer Funktion in Kombination mit dem Funktionsnamen wird als Deklaration bezeichnet. 
+
+- führt Namen und Typen ein ohne Details zu nennen
+- Datentyp: Gibt die Existenz eines Typs bekannt, zB. class X;
+- Funktion: Gibt die Existenz einer Funktion mit einem bestimmten Namen und entsprechender Signatur bekannt
+- Variable: Gibt die Existenz einer Variable eines bestimmten Typs bekannt.
+
+Deklaration und Definition einer Funktion können getrennt erfolgen, z.B.
 ```
 // Deklaration
 int add(int, int);
@@ -108,8 +119,7 @@ Die Kombination von Rückgabetyp und Parameterliste wird als Signatur einer Funk
 
 ### Gültigkeitsbereich
 Variablen sind nur nach ihrer Deklaration in dem Block
-gültig, in dem sie deklariert wurden (und in dessen
-Unterblöcken). Der Gültigkeitsbereich, auch ```scope``` gennant, gibt den Bereich an, in dem die deklarierte Klasse / Funktion / Variable nur "gesehen" und verwendet werden kann.
+gültig, in dem sie deklariert wurden (und in dessen Unterblöcken). Der Gültigkeitsbereich, auch ```scope``` genannt, gibt den Bereich an, in dem die deklarierte Klasse / Funktion / Variable nur "gesehen" und verwendet werden kann.
  
 
 ### Header
@@ -117,7 +127,7 @@ Eine ```.hpp```-Datei enthält Methodendeklarationen und Klassendefinitionen (wo
 
 
 ### Initialisierung
-Die Intialisierung ist das Zuweisen eines Wertes zu einer Variablen (die Variable "mit Werten belegen").
+Die Intialisierung ist das Zuweisen eines Wertes zu einer Variablen (die Variable wird "mit Werten belegt").
 
 ### iostream
 ```iostream``` ist eine Standard-Bibliothekskopfdatei, die Definitionen der Standard-Eingabe- und Ausgabeströme enthält. 
@@ -154,6 +164,9 @@ Der Konstruktor ist eine Methode zur Initialisierung eines neu erzeugten Objekte
 ### Linker
 Der Linker verbindet alle Objektdateien und Bibliotheken zu einer ausführbaren Datei.
 
+```
+$ g++ hello_world.o -o hello_world   // --> ./hello_world 
+```
 
 ### main()
 Die ```main()```-Funktion ist der sog. Programmeinstiegspunkt. Sie kann ggf. Kommandozeilenparameter übergeben bekommen. Der von der ```main``` zurückgegebene Wert ist ein Beendigungscode.
