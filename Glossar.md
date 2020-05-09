@@ -2,7 +2,7 @@ Glossar [A-Z]
 =======
 
 ### Array
-Ein Array ist ein Datentyp in dem mehrere Werte gleichen Typs gespeichert werden können. In C++ ist der sogenannte Container Array als Standartdatentyp verfügbar, nachdem das entsprechende Header-File eingebunden wurde. Der Typ der zu speichernden Werte wird in ```< >``` angegeben, z.B.
+Ein Array ist ein Datentyp in dem mehrere Werte gleichen Typs gespeichert werden können. In C++ ist der sogenannte Container Array als Standard-Datentyp verfügbar, nachdem das entsprechende Header-File eingebunden wurde. Der Typ der zu speichernden Werte wird in ```< >``` angegeben, z.B.
 
 ```
 #include <array>
@@ -17,10 +17,10 @@ int main() {
 ```
 
 ### Ausführbare Datei
-
-
-### Ausgabe
-
+Maschinenlesbarer Programmcode, der als Folge des Linkens entsteht und direkt ausführbar ist.
+```
+$ ./hello_world  // Terminal Befehl
+```
 
 
 ### C++
@@ -28,15 +28,20 @@ C++ ist eine universelle Programmiersprache mit Schwerpunkt auf Systemprogrammie
 
 
 ### const
-
+Eine als ```const``` markierte Variable kann nicht geändert werden. Der Versuch, nicht konstante Operationen darauf aufzurufen, führt zu einem Compilerfehler. Werte, die mit ```const``` definiert sind, unterliegen der Typüberprüfung und können anstelle konstanter Ausdrücke verwendet werden. Ein Zeiger auf eine Variable, die als ```const``` deklariert ist, kann nur einem Zeiger zugewiesen werden, der auch als ```const``` deklariert wird.
 
 
 ### Compiler
 Ein Compiler ist ein Programm, das den in einer höheren Programmiersprache geschriebenen Quellcode in die maschinenlesbare, binäre Sprache - als ausführbaren Code - übersetzt.
 
+1. Der C++ - Präprozessor kopiert den Inhalt aller enthaltenen Header-Dateien in die Quellcodedatei, generiert Makrocode und ersetzt symbolische Konstanten, die mit ```#define``` definiert sind, durch ihre Werte.
+2. Die vom C++ - Präprozessor erzeugte erweiterte Quellcodedatei wird in eine für die Plattform geeignete Assemblersprache kompiliert.
+3. Der vom Compiler generierte Assembler-Code wird zu einem geeigneten Objektcode für die Plattform zusammengestellt.
+4. Die vom Assembler generierte Objektcodedatei wird mit den Objektcodedateien für alle Bibliotheksfunktionen verknüpft, die zum Erstellen einer ausführbaren Datei verwendet werden.
+
 
 ### Definition
-Die Festlegung des Verhaltens einer Funktion wird als Definition bezeichnet. Der Funktionsrumpf legt fest, was beim Aufruf der Funktion erfolgt. 
+Die Festlegung des Verhaltens einer Funktion wird als Definition bezeichnet. Der Funktionsrumpf legt fest, was beim Aufruf der Funktion erfolgt. Eine Definition stellt dem Compiler alle Informationen zur Verfügung, die er benötigt, um Computercode zu generieren 
 
 
 ### Deklaration
@@ -53,9 +58,9 @@ int add(int a, int b) {
 
 ### Funktion
 Eine C++-Funktion hat folgende vier Bestandteile:
-1. einen Rückgabetyp, wie z.B. int
+1. einen Rückgabetyp, wie z.B. ```int```
 2. eine Parameterliste
-3. einen Funktionsnamen, wie z.B. main,
+3. einen Funktionsnamen, wie z.B. ```main```,
 4. einen Funktionsrumpf, der in geschweiften Klammern eine Folge von Anweisungen auflistet
 
 
@@ -64,17 +69,20 @@ Die Kombination von Rückgabetyp und Parameterliste wird als Signatur einer Funk
 
 
 ### Gültigkeitsbereich
+Variablen sind nur nach ihrer Deklaration in dem Block
+gültig, in dem sie deklariert wurden (und in dessen
+Unterblöcken). Der Gültigkeitsbereich, auch ```scope``` gennant, gibt den Bereich an, in dem die deklarierte Klasse / Funktion / Variable nur "gesehen" und verwendet werden kann.
+ 
 
 ### Header
-Eine ```.hpp```-Datei enthählt Methodendeklarationen und Klassendefinitionen (wobei die Membervariablen und -funktionen deklariert werden). Somit werden Schnittstellen festgelegt, deren Ausprägung dann in anderen Dateien implementiert wird.
+Eine ```.hpp```-Datei enthält Methodendeklarationen und Klassendefinitionen (wobei die Membervariablen und -funktionen deklariert werden). Somit werden Schnittstellen festgelegt, deren Ausprägung dann in anderen Dateien implementiert wird.
 
 
 ### Initialisierung
-
+Die Intialisierung ist das Zuweisen eines Wertes zu einer Variablen (die Variable "mit Werten belegen").
 
 ### iostream
 ```iostream``` ist eine Standard-Bibliothekskopfdatei, die Definitionen der Standard-Eingabe- und Ausgabeströme enthält. 
-
 
 
 ### include
@@ -92,15 +100,26 @@ Mittels ```#include``` können weitere Quellcode-Teile in das Programm integrier
 ### Kapselung
 Kapselung bedeutet, dass man ein System aus zwei Ansichten betrachten kann. Die äußere Ansicht oder Schnittstelle beschreibt was ein Objekt macht bzw. was man damit machen kann. Die innere Ansicht oder Implementierung beschreibt, wie das Objekt seine Funktionalität implementiert.
 
+
 ### Kommentar
 Ein Kommentar ist eine Möglichkeit, beliebigen Text in den Quellcode einzufügen, ohne dass der C++ - Compiler ihn mit funktionaler Bedeutung interpretiert. Kommentare werden verwendet, um Einblick in das Design oder die Methode eines Programms zu geben. Sie können einzeilig ```//``` oder mehrzeilig ```/* */``` sein.
 
+
+### Konstruktor
+Der Konstruktor ist eine Methode zur Initialisierung eines neu erzeugten Objektes.
+- wird implizit aufgerufen, wenn das Objekt erzeugt wird
+- initialisiert alle Membervariablen durch Aufruf entsprechender Konstruktoren
+- hat in vielen Sprachen den gleichen Namen wie die Klasse
+- gibt in C++ keinen Wert zurück
+
+
 ### Linker
-Der Linker verbindet alle Objektdateien und Bibliotheken zu einer ausführbaren Datei
+Der Linker verbindet alle Objektdateien und Bibliotheken zu einer ausführbaren Datei.
 
 
 ### main()
 Die ```main()```-Funktion ist der sog. Programmeinstiegspunkt. Sie kann ggf. Kommandozeilenparameter übergeben bekommen. Der von der ```main``` zurückgegebene Wert ist ein Beendigungscode.
+
 
 ### Methode
 Die Syntax für Methoden hängt von der Programmiersprache ab, aber alle Methoden haben die folgenden Komponenten:
@@ -109,9 +128,15 @@ Die Syntax für Methoden hängt von der Programmiersprache ab, aber alle Methode
     - Methoden gleichen Namens können über die Signatur unterschieden werden.
     - In C++ geht der Rückgabetyp nicht in die Unterscheidungsmerkmale ein.
     - In anderen Definitionen des Begriffs Signatur geht der Rückgabetyp oft nicht ein.
-3. Der Rumpf der Methode enthält den Programmcode. Es kann hier direkt auf alle Instanzvariablen zugegriffen werden
+3. Der Rumpf der Methode enthält den Programmcode. Es kann hier direkt auf alle Instanzvariablen zugegriffen werden.
+
 
 ### Objektcode
+Der Objektcode ist der vom Compiler generierte Maschinencode zu jeder Quellcode-Datei.
+```
+$ g++ -c hello_world.cpp    // --> hello_world.o 
+```
+
 
 ### Präprozessor
 Der C++ Präprozessor ist ein Macro-gesteuerter Textersetzer. Er wird verwendet, um Header-Dateien zu inkludieren oder um Mehrfach-Inklusion am Anfang und Ende von Header-Dateien zu verhindern:
@@ -125,26 +150,49 @@ Der C++ Präprozessor ist ein Macro-gesteuerter Textersetzer. Er wird verwendet,
 #endif
 ``` 
 
+### Präprozessordirektiven
+Beschreibt die Anweisungen, die normalerweise verwendet werden, um das Ändern und Kompilieren von Quellprogrammen in unterschiedlichen Ausführungsumgebungen zu vereinfachen.
+Der Präprozessor erkennt z.B. die folgenden Direktiven:
+- ```#define``` , ```#error``` , ```#ifdef``` , ```#include``` , ```#line``` , ```#pragma```
+
+
 ### Programm
+Ein Programm ist eine Folge von Anweisungen und Definitionen in Maschinensprache oder einer höheren Programmiersprache, die den Computer in die Lage versetzt, bestimmte Aufgaben im Bereich der Datenverarbeitung zu übernehmen.
+
 
 ### Quellcode
+Der Quellcode, auch ```source code``` genannt, ist eine in einer höheren Programmiersprache geschriebene Abfolge von Programmanweisungen, die vom Menschen gelesen, aber erst nach einer elektronischen Übersetzung vom Computer verarbeitet werden können.
+
 
 ### Typ
+Der (Daten-)Typ bezeichnet die Zusammenfassung konkreter Wertebereiche und darauf definierter Operationen zu einer Einheit.
+- Elementartypen (```char```, ```short```, ```int```, ```float```, ```bool```,..)
+- Standartdatentypen std:: (```string```, ```vector<T>```, ```ostream```)
+
 
 ### Typkonvertierung
+Als Typkonvertierung bezeichnet man die Umwandlung eines Datentyps in einen anderen
+
 
 ### Variable
+Eine Variable ist eine Speicherzelle, in der der Wert abgelegt wird. Sie benötigt einen Datentyp.
+
 
 ### Verhalten
 Die Aktionen, die eine Instanz der Klasse durch den Methodenaufruf durchführt - durch Methoden implementiert.
 
-### Wert
 
 ### Zustand
 Die Daten, die in einem Objekt gespeichert sind, um sein Verhalten zu implementieren. Diese Daten werden in Instanzvariablen (Membervariablen, Attribute, Datenfelder, fields, data members) gespeichert.
 
+
 ### Zuweisung
+Bei der Zuweisung wird ein neuer Wert an ein existierendes Objekt zugewiesen.
+
 
 ### <<
+Die Standardbibliothek definiert den Operator ```<<```, um Daten für bestimmte Datentypen in Ausgabeströme einzufügen. ```stream << content``` fügt ```content``` in den Stream ein und gibt denselben, aber aktualisierten Stream zurück. Dadurch können Stream-Einfügungen verkettet werden: ```std::cout << "Foo" << " Bar";``` druckt "FooBar" auf die Konsole.
+
 
 ### >>
+Die Standardbibliothek definiert den Operator ```>>```, um Daten für bestimmte Datentypen in Eingabeströme einzufügen.
