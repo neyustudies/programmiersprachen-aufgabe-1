@@ -1,5 +1,40 @@
 Glossar [A-Z]
 =======
+* [Array](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#array)
+* [Ausführbare Datei](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#ausführbare-datei)
+* [C++](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#c)
+* [const](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#const)
+* [Compiler](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#compiler)
+* [Definition](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#definition)
+* [Deklaration](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#deklaration)
+* [Funktion](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#funktion)
+* [Funktionssignatur](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#funktionssignatur)
+* [Gültigkeitsbereich](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#gültigkeitsbereich)
+* [Header](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#header)
+* [Initialisierung](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#initialisierung)
+* [#iostream](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#iostream)
+* [#include](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#include)
+* [Kapselung](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#kapselung)
+* [Kommentar](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#kommentar)
+* [Konstruktur](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#konstruktor)
+* [Linker](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#linker)
+* [main()](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#main)
+* [Methode](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#methode)
+* [Objektcode](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#objektcode)
+* [Präprozessor](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#präprozessor)
+* [Präprozessordirektiven](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#präprozessordirektiven)
+* [Programm](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#programm)
+* [Quellcode](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#quellcode)
+* [Typ](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#typ)
+* [Typkonvertierung](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#typkonvertierung)
+* [Variable](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#variable)
+* [Verhalten](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#verhalten)
+* [Zustand](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#zustand)
+* [Zuweisung](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#zuweisung)
+* [<<](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#-1)
+* [>>](https://github.com/neyustudies/programmiersprachen-aufgabe-1/blob/master/Glossar.md#-1)
+
+---
 
 ### Array
 Ein Array ist ein Datentyp in dem mehrere Werte gleichen Typs gespeichert werden können. In C++ ist der sogenannte Container Array als Standard-Datentyp verfügbar, nachdem das entsprechende Header-File eingebunden wurde. Der Typ der zu speichernden Werte wird in ```< >``` angegeben, z.B.
